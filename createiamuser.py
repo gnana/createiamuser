@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 
 import argparse
-from iamuser import IAMUser
-from password import GeneratePassword
+from user import IAMUser
 
 def main():
-
     parser = argparse.ArgumentParser(description='Tool to create AWS IAM Users')
     parser.add_argument('--username', required=True, help='IAM usernames to create')
     parser.add_argument('--role', help='Role to be assigned to the user')
